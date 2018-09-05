@@ -1,0 +1,44 @@
+#Bon {
+  box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+  padding:2mm;
+  margin: 0 auto;
+  width: 60mm;
+  height: 160mm;
+  background: #FFF;
+     }
+
+#mid {
+  box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+  padding:1mm;
+  margin: 0 auto;
+  width: 58mm;
+  background: #FFF;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabletitle{
+  padding: 5px;
+  font-size: .5em;
+  background: #EEE;
+}
+.tabletitle2{
+  padding: 5px;
+  font-size: .5em;
+  background: #EEE;
+}
+#totaal{
+  font-size: 16px;
+}
+#total{
+  font-size: 16px;
+}
+.tabletitle3{
+  padding: 5px;
+  font-size: .5em;
+  background: #EEE;
+}
+.service{border-bottom: 1px solid #EEE;}
+.item{width: 15mm;}
+.itemtext1{font-size: .em;}
