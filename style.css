@@ -1,16 +1,15 @@
 Body{
   background-color: rgb(35, 36, 34)
 }
-#Bon {
+#Bon{
   box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
   padding:2mm;
   margin: 0 auto;
   width: 60mm;
   height: 160mm;
   background: #FFF;
-     }
-
-#mid {
+}
+#mid{
   box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
   padding:1mm;
   margin: 0 auto;
@@ -44,4 +43,5 @@ table{
 }
 .service{border-bottom: 1px solid #EEE;}
 .item{width: 15mm;}
-.itemtext1{font-size: .em;}
+.itemtext1{font-size: .em;
+}

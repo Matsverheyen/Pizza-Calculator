@@ -1,5 +1,5 @@
 //Mats Verheyen
-//Opdarcht: Pizza calculator
+//Opdracht: Pizza calculator
 //Constante prijzen
 const priceSmall = 4.00;
 const priceMedium = 6.50;
