@@ -13,6 +13,8 @@ var pizzaSmall = 0;
 var adr = prompt('Wat is uw adres?');
 var email = prompt('Wat is uw email?');
 var telNumber = prompt('Wat is uw telefoonnummer?');
+
+//voer dit uit todat de gebruiker aangeeft dat hij geen pizza's meer wilt.
 do {
   var ChoiceOne = prompt('Wat voor pizza wilt u bestellen?', 'Small, Medium, Large');
   if (ChoiceOne == 'Small' || ChoiceOne == 'small') {
@@ -25,6 +27,7 @@ do {
     pizzaLarge++;
     next = confirm('Wilt u nog een pizza bestellen?');
   } else {
+    alert('Geen geldige keuze!');
     console.log('Error Occured!');
   }
 } while (next == true);
@@ -48,7 +51,7 @@ var TotalLarge = pizzaLarge * priceLarge;
 var TotaalPrijs = TotalSmall + TotalMedium + TotalLarge;
 
 //Totale prijs berkenen
-document.write('<br>Totaal prijs: €' + TotaalPrijs);
+//document.write('<br>Totaal prijs: €' + TotaalPrijs);
 
 //weergeven in de Bon
 document.getElementById('adres').innerHTML = 'Adres: ' + adr;
@@ -60,4 +63,4 @@ document.getElementById('itemtext3').innerHTML = num3;
 document.getElementById('itemprice1').innerHTML = '€' + TotalSmall;
 document.getElementById('itemprice2').innerHTML = '€' + TotalMedium;
 document.getElementById('itemprice3').innerHTML = '€' + TotalLarge;
-document.getElementById('total').innerHTML = '€' + TotaalPrijs;
+document.getElementById('total').innerHTML = '€' + TotaalPrijs.toFixed(2); //zorgt voor twee decimalen
