@@ -6,12 +6,28 @@ const priceMedium = 6.50;
 const priceLarge = 8.00;
 
 //Keuze uit hoeveelheid pizza's
+var next = true;
+var pizzaLarge = 0;
+var pizzaMedium = 0;
+var pizzaSmall = 0;
 var adr = prompt('Wat is uw adres?');
 var email = prompt('Wat is uw email?');
 var telNumber = prompt('Wat is uw telefoonnummer?');
-var pizzaSmall = prompt('Hoeveel small pizza\'s', '0');
-var pizzaMedium = prompt('Hoeveel medium pizza\'s', '0');
-var pizzaLarge = prompt('Hoeveel Large pizza\'s', '0');
+do {
+  var ChoiceOne = prompt('Wat voor pizza wilt u bestellen?', 'Small, Medium, Large');
+  if (ChoiceOne == 'Small' || ChoiceOne == 'small') {
+    pizzaSmall++;
+    next = confirm('Wilt u nog een pizza bestellen?');
+  } else if (ChoiceOne == 'Medium' || ChoiceOne ==  'medium') {
+    pizzaMedium++;
+    next = confirm('Wilt u nog een pizza bestellen?');
+  } else if (ChoiceOne == 'Large' || ChoiceOne ==  'large') {
+    pizzaLarge++;
+    next = confirm('Wilt u nog een pizza bestellen?');
+  } else {
+    console.log('Error Occured!');
+  }
+} while (next == true);
 
 //Hoeveelheid omzetten in integers
 var num1 = parseFloat(pizzaSmall);
@@ -20,10 +36,10 @@ var num3 = parseFloat(pizzaLarge);
 var total = num1 + num2 + num3; //Totale pizza's uitrekenen
 
 //Totale pizza's weergeven op het scherm
-document.write('Aantal bestelde pizza\'s Totaal: ' + total + '<br>' + '<br>');
-document.write('Small: ' + pizzaSmall + '<br>');
-document.write('Medium: ' + pizzaMedium + '<br>');
-document.write('Large: ' + pizzaLarge) + '<br>';
+console.log('Aantal bestelde pizza\'s Totaal: ' + total);
+console.log('Small: ' + pizzaSmall);
+console.log('Medium: ' + pizzaMedium);
+console.log('Large: ' + pizzaLarge);
 
 //Totale prijs berekenen
 var TotalSmall = pizzaSmall * priceSmall;
