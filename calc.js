@@ -18,13 +18,16 @@ var telNumber = prompt('Wat is uw telefoonnummer?');
 do {
   var ChoiceOne = prompt('Wat voor pizza wilt u bestellen?', 'Small, Medium, Large');
   if (ChoiceOne == 'Small' || ChoiceOne == 'small') {
-    pizzaSmall++;
+    var nSmall = prompt('Hoeveel?');
+    pizzaSmall += parseFloat(nSmall);
     next = confirm('Wilt u nog een pizza bestellen?');
   } else if (ChoiceOne == 'Medium' || ChoiceOne ==  'medium') {
-    pizzaMedium++;
+    var nMedium = prompt('Hoeveel?');
+    pizzaMedium += parseFloat(nMedium);
     next = confirm('Wilt u nog een pizza bestellen?');
   } else if (ChoiceOne == 'Large' || ChoiceOne ==  'large') {
-    pizzaLarge++;
+    var nLarge = prompt('Hoeveel?');
+    pizzaLarge += parseFloat(nLarge);
     next = confirm('Wilt u nog een pizza bestellen?');
   } else {
     alert('Geen geldige keuze!');
